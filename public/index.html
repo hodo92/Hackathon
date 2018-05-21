@@ -19,21 +19,17 @@
 
 <body>
     <nav class="navbar purple darken-4 navbar-fixed-top">
-        <!-- <div class="container-fluid"> -->
+        <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand">Welcome to the Animal Kingdom</a>
+                <div class="view-favorites nav navbar-nav navbar-right dropdown">
+                        <p class="font">Favorites<br></p> 
+                        <div class="favorites">
+                        </div>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <div href="#" class="tog view-favorites" data-toggle="dropdown" role="button">
-                            <p class="font">Favorites<br><i class="fa fa-star"></i></p> 
-                            <div class="favorites">
-
-                                </div>
                     </li>
                 </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -122,7 +118,7 @@
                  <div class="show-pet" data-id="{{_id}}">
                     <div class="col-md-6">
                                     <div class="col-lg-12">
-                                            <h1 class="fly">{{name}}</h1>
+                                            <h1>{{name}}</h1>
                                         <img src="{{img}}" class=" fly polaroid-images proimage rounded md-auto d-block" alt=" ">
                                         <div class="row btnRow">
                                                 <div class="col-xs-4">

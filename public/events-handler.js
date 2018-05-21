@@ -86,7 +86,7 @@ class EventsHandler {
                   });
             }
             registerTogglfavorites() {
-                $('.view-favorites').on('click','.fa-star', (event) => {
+                $('.view-favorites').on('click','.font', (event) => {
                     $('.view-favorites').unbind("mouseenter mouseleave");
                     $('.favorites').toggleClass('appear');
                     event.preventDefault();
