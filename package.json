@@ -1,5 +1,5 @@
 {
-  "name": "spacebook-c2",
+  "name": "pet-lover",
   "version": "1.0.0",
   "description": "\"# PetLover\" \r \"# Hackathon\"",
   "main": "main.js",
@@ -21,18 +21,8 @@
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
     "express": "^4.16.3",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "handlebars": "^4.0.11",
     "jquery": "^3.3.1",
-=======
-    "handlebars": "^4.0.10",
-    "jquery": "^3.2.1",
->>>>>>> 6fee4ca74f807e9e243ebd28e7fca01b4bd4b3d1
-=======
-    "handlebars": "^4.0.11",
-    "jquery": "^3.3.1",
->>>>>>> 0e330b30a3160a15714c305f05fc778b4f14e602
     "mongoose": "^4.10.7"
   }
 }

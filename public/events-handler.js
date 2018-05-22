@@ -9,9 +9,29 @@ class EventsHandler {
 
     registerAddPet() {
         $('#addpet').on('click', () => {
+            if ( $("#name").val()===null ||
+            $("#gender").val()===null ||
+            $("#breed").val()===null||
+             $("#color").val()===null||
+             $("#size").val()===null ||
+             $("#age").val()===null ||
+             $("#mail").val()===null ||
+             $("#img").val()===null ) {
+                 alert("Please fill out all fields")
+             }
+            else{
             let obj = {name: $("#name").val(), gender: $("#gender").val(),breed: $("#breed").val(),color: $("#color").val(),size: $("#size").val(),age: $("#age").val(),mail: $("#mail").val(),img: $("#img").val(),addpet : "no"};
+            $("#name").val('');
+            $("#gender").val('');
+            $("#breed").val('');
+            $("#color").val('');
+            $("#size").val('');
+            $("#age").val('');
+            $("#mail").val('');
+            $("#img").val('');
             this.petsRepository.addPet(obj).then(()=>{this.petsRenderer.renderPets(this.petsRepository.pets)});
-            })
+            }
+        })
         }
        
 
@@ -38,7 +58,7 @@ class EventsHandler {
 
                     //function show next
                     // this.petsRepository.counter++;
-                    setTimeout(()=>{ this.petsRenderer.renderPets(this.petsRepository.pets) }, 1000);
+                    setTimeout(()=>{ this.petsRenderer.renderPets(this.petsRepository.pets) }, 500);
                     
                    
                     })
@@ -66,9 +86,9 @@ class EventsHandler {
                   });
             }
             registerTogglfavorites() {
-                $('.view-favorites').on('click', (event) => {
+                $('.view-favorites').on('click','.font', (event) => {
                     $('.view-favorites').unbind("mouseenter mouseleave");
-                    $('.favorites').toggleClass('hide');
+                    $('.favorites').toggleClass('appear');
                     event.preventDefault();
                   });
             }

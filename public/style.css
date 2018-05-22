@@ -19,7 +19,7 @@ img{
     margin-left: auto ; 
     margin-right: auto ; 
     display: block ; 
-    width: 90% ;  
+    width: 90% ;
 }
 
 /* .row{
@@ -153,20 +153,24 @@ h2{
     color:blueviolet ; 
     font-weight: bold;
 }
-.hide   {
-    display: none;
-    overflow-y: scroll ; 
-    
-}
+
 
 .font{
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 30px;
+    text-align: left ; 
 }
 
 .favorites{
-  
+ 
 overflow-y: scroll;
-height: 349px;
+
+display:none ; 
+
+}
+
+.appear{
+    display: block;
+    height: 349px;
 }
 
