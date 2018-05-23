@@ -101,7 +101,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/pet', function (req, res) {
   Pet.find().exec(function(err, pets){
     if (err){
-      console.log(err)
+      console.log(err);
+      res.sendStatus(500).send("err");
     } else{
       // console.log(pets);
       res.send(pets);
