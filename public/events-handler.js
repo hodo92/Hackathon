@@ -7,7 +7,7 @@ class EventsHandler {
         this.favorites = favorites;
     }
     formValidate() {
-        return ($("#name").val() === null ||
+        if ($("#name").val() === null ||
             $("#gender").val() === null ||
             $("#breed").val() === null ||
             $("#color").val() === null ||
@@ -15,6 +15,8 @@ class EventsHandler {
             $("#age").val() === null ||
             $("#mail").val() === null ||
             $("#img").val() === null)
+
+            return true ; 
     }
 
     registerAddPet() {
