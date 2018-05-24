@@ -8,6 +8,9 @@ class PetsRenderer {
         this.counter = 0;
        // this.$commentTemplate = $('#comment-template').html();
     }
+    showNextPet(){
+        
+    }
     renderPets(pets) {
         if (pets.length == 0 || this.counter == pets.length){
             this.$pets.empty();
@@ -23,6 +26,19 @@ class PetsRenderer {
           console.log(this.counter);
           console.log(pets.length);
     }
+    }
+
+    renderError(error){
+        $(".error").html(error);
+        
+    }
+
+    swipePetRight(){
+        $(".fly").addClass('magictime bombRightOut');
+    }
+
+    swipePetLeft(){
+        $(".fly").addClass('magictime bombLeftOut');
     }
 }
 
